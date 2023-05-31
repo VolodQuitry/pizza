@@ -58,6 +58,7 @@ function calculateProcuct() {
 	if (isExistCode(productCode)) {
 		const product = getProduct(productCode);
 		const price = product.price * productCount;
+
 		showResult("Имя продукта: " + product.name + ", количество: " + productCount + ", цена: " + price);
 	}
 	else {
@@ -70,7 +71,7 @@ function showResult(result) {
 }
 
 function getProduct(code) {
-	return products.find(product => product.code == code);
+	return products.find(product => product.code === code);
 }
 
 function isExistCode(code) {
