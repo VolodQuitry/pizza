@@ -67,7 +67,7 @@ function calculateProcuct() {
 }
 
 function showResult(result) {
-	resultDisplay.innerHTML = result;
+	resultDisplay.innerText = result;
 }
 
 function getProduct(code) {
